@@ -80,12 +80,12 @@ const a  = [7,9,3,4,5,6];
 
 // }
 
-for(let i =0; i<=10; i++){
-    console.log("kaushal");
-}
+// for(let i =0; i<=10; i++){
+//     console.log("kaushal");
+// }
 
 // while
-//do while
+// do while
 // for in
 // for of 
 // for each
