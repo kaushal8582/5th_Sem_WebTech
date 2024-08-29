@@ -63,12 +63,29 @@ let name1 =  "     kausahl     ";
 // console.log(name1);
 // console.log(name1.trim());
 
-let k = "Nikita  Kumari";
-console.log(k);
+let k = "hello hello hello kumar sing ";
+// console.log(k);
 
-console.log(k.split("Nikita  Kumari"));
+// console.log(k.split("Nikita  Kumari"));
 
 
+// console.log(k.split("").reverse().join(''));
+
+// console.log(k.split("i").join("Z"));
+
+const reg = new RegExp("i","g")
+
+console.log(k.replace(reg,"Z"));
+
+let obj ={}
+
+obj["k"]=3;
+obj["j"]=1;
+
+console.log(obj);
+
+
+console.log("banana".split("na"));
 
 
 
