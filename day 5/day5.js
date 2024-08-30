@@ -38,29 +38,36 @@
 // console.log(arr);
 
 
-let arr =[1,0,7,4,5,6,7];
 
 // console.log(arr.slice(2,4));
 // console.log(arr.slice(0,3));
 
 
 // arr.forEach((elem)=>{
-//     console.log(elem*elem);
-//     // task
+    //     console.log(elem*elem);
+    //     // task
+    // })
+    
+    // const so =  arr.map((elem)=>{
+        //     return elem*elem
+        // })
+        
+        // console.log(so);
+        
+// let arr =[1,0,7,4,5,6,7];
+
+// const fill =  arr.filter((a)=>{
+//     return a>4;
 // })
 
-// const so =  arr.map((elem)=>{
-//     return elem*elem
+// console.log(fill);
+
+
+// const red = arr.reduce((a,b)=>{
+//     return a+b;
 // })
 
-// console.log(so);
-
-
-const filtering =  arr.filter((a)=>  );
-console.log(filtering);
-
-
-
+// console.log(red);
 
 
 
