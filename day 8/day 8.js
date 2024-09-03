@@ -19,20 +19,20 @@
 // }
 
 
-// const collegeBuddy = function(){
-//     let username = "kaushal"
-//     console.log(this);
-// }
+const collegeBuddy = function(){
+    let username = "kaushal"
+    console.log(this);
+}
 
 // console.log(collegeBuddy);
-// collegeBuddy()
+collegeBuddy()
 
-// const add = ()=>{
-//     let username = "kaushal"
-//     console.log(this);
-// }
+const add = ()=>{
+    let username = "kaushal"
+    console.log(this);
+}
 
-// add()
+add()
 
 
 // ()=>{}
@@ -84,23 +84,23 @@
 // )("kaushal")
 
 
-(function collegeBuddy(){
-    console.log(`DataBase Connected`);
-})()
+// (function collegeBuddy(){
+//     console.log(`DataBase Connected`);
+// })()
 
-// import iife
+// // import iife
 
-;(function addTwo(){
-    console.log(`DataBase Connected`);
-})();
+// ;(function addTwo(){
+//     console.log(`DataBase Connected`);
+// })();
 
-;(function addTwo(){
-    console.log(`DataBase Connected`);
-})()
+// ;(function addTwo(){
+//     console.log(`DataBase Connected`);
+// })()
 
-;(function addTwo(){
-    console.log(`DataBase Connected`);
-})()
+// ;(function addTwo(){
+//     console.log(`DataBase Connected`);
+// })()
 
 
 
