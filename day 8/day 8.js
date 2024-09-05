@@ -19,20 +19,20 @@
 // }
 
 
-const collegeBuddy = function(){
-    let username = "kaushal"
-    console.log(this);
-}
+// const collegeBuddy = function(){
+//     let username = "kaushal"
+//     console.log(this);
+// }
 
 // console.log(collegeBuddy);
-collegeBuddy()
+// collegeBuddy()
 
-const add = ()=>{
-    let username = "kaushal"
-    console.log(this);
-}
+// const add = ()=>{
+//     let username = "kaushal"
+//     console.log(this);
+// }
 
-add()
+// add()
 
 
 // ()=>{}
@@ -70,6 +70,15 @@ add()
 
 
 // IIFE
+
+// (()=>{
+//     console.log("kaushal");
+//     // database connection
+// })()
+
+// ;(function kau(){
+//     console.log("kausahl");
+// })()
 
 // (function collegeBuddy(){
 //     console.log(`DataBase Connected`);
