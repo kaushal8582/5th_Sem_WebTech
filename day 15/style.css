@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+
+h1{
+     font-size: 30px;
+}
+
+button{
+    margin-top: 40px;
+}
+
+div{
+    margin: auto;
+    margin-top: 30px    ;
+    width: 400px;
+    height: 200px;
+    border: 2px solid sandybrown;
+    /* background-color: rgb(11,13,23); */
+}
