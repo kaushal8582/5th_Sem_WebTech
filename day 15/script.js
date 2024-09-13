@@ -24,3 +24,4 @@ function getRandomColor(){
 // rgb(24,45,124)
 // rgb(242,235,124)
 // 0-255
+

@@ -44,19 +44,61 @@
 
 
 
-switch (4) {
-    case 1:
-        console.log("press 1");
-        break;
-    case 2:
-        console.log("press 2");
-        break;
-    default:
-        // console.log("nothing");
-        break;
-}
+// switch (4) {
+//     case 1:
+//         console.log("press 1");
+//         break;
+//     case 2:
+//         console.log("press 2");
+//         break;
+//     default:
+//         // console.log("nothing");
+//         break;
+// }
 
 
 // variable
 // truty falsy
 // condition- if elseif else,, switch
+
+
+
+//  second class --------------------------------------------
+
+// let,var,const
+
+// let a =12;
+// var b=12;
+// const c =12;
+
+
+// a="kaushal";
+// console.log(a);
+
+// a=3.4334;
+
+// console.log(a);
+
+// console.log(j);
+// // console.log(k);
+
+// var j=23;
+
+// {
+//     let k = 23;
+//     var j= 45; 
+// }
+
+// // console.log(k);
+// console.log(j);
+
+
+// truty & falsy
+
+if(0){
+    console.log("kaushal");
+    
+}
+
+
+
