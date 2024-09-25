@@ -9,3 +9,24 @@
     height: 200px;
     background-color: salmon;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background: red;
+    margin-top: 100px;
+    margin-left: 100px;
+    
+}
+/* .secBox{
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-left: 20px;
+} */
