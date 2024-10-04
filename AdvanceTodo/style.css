@@ -50,6 +50,7 @@ form{
     background: #000;
     padding-top: 40px;
     display: none;
+    z-index: 99;
 }
 
 .cross{
@@ -97,4 +98,33 @@ form button{
     margin-top: 20px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.cardParent{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    /* background: white; */
+}
+
+.card{
+    background: #21001a;
+    width: 650px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+}
+
+.categ{
+    position: absolute;
+    top: 2%;
+    right: 2%;
 }
