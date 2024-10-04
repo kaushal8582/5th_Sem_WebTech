@@ -19,7 +19,7 @@ cross.addEventListener("click", () => {
   form.style.display = "none";
 });
 
-let arr=[]
+let arr = [];
 
 let obj = {
   heading: "",
@@ -28,6 +28,14 @@ let obj = {
   category: "",
 };
 
+
+
+let data = JSON.parse(localStorage.getItem("data"));
+if (data) {
+  arr = data;
+  createCard();
+}
+
 Btn.addEventListener("click", (e) => {
   e.preventDefault();
   obj.heading = heading.value;
@@ -35,32 +43,54 @@ Btn.addEventListener("click", (e) => {
   obj.category = Category.value;
   obj.link = link.value;
 
-  const card = document.createElement("div");
-  card.classList.add("card")
-  card.innerHTML=`<div class="categ">
-                    ${obj.category}
-                </div>
-                <h1>${obj.heading}</h1>
-                <p>${obj.desc}</p>
-                <a target="_blank" href=${obj.link}>${obj.link}</a>`
-
-    cardParent.appendChild(card)
-
   arr.push(obj);
-  console.log(arr);
 
-    heading.value=""
-    desc.value=""
-    link.value=""
-    Category.value =''
+  heading.value = "";
+  desc.value = "";
+  link.value = "";
+  Category.value = "";
 
   form.style.display = "none";
-  show()
+  show();
+  setValueInLocalStorage();
 });
 
-
-
-function show(){
+function show() {
   console.log(arr);
-  
 }
+
+function setValueInLocalStorage() {
+  let value = JSON.stringify(arr);
+  localStorage.setItem("data", value);
+  createCard();
+}
+
+function createCard() {
+  let cluster = "";
+  for (let i = 0; i < arr.length; i++) {
+    cluster += `<div class ="card">
+                <div class="categ">
+                    ${arr[i].category}
+                </div>
+                <h1>${arr[i].heading}</h1>
+                <p>${arr[i].desc}</p>
+                <a target="_blank" href=${arr[i].link}>${arr[i].link}</a> </div>`;
+  }
+
+  cardParent.innerHTML=cluster;
+}
+
+
+
+// localStorage
+
+// const card = document.createElement("div");
+//   card.classList.add("card")
+//   card.innerHTML=`<div class="categ">
+//                     ${obj.category}
+//                 </div>
+//                 <h1>${obj.heading}</h1>
+//                 <p>${obj.desc}</p>
+//                 <a target="_blank" href=${obj.link}>${obj.link}</a>`
+
+//     cardParent.appendChild(card)
