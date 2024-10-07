@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <main>
+      <h1>Ninja's Image Editor</h1>
+      <div id="mainDiv">
+        <div id="left">
+          <h3>Filter</h3>
+          <div class="buttons">
+            <button class="active">Britness</button>
+            <button>grayscale</button>
+            <button>contrast</button>
+            <button>invert</button>
+          </div>
+
+          <div class="progress">
+            <div class="progre-report">
+              <h3 class="text-value">Britness</h3>
+              <h3 class="percent">100%</h3>
+            </div>
+            <input type="range" max="200" min="0" value="90" />
+          </div>
+
+          <div class="rotate-flip" >
+            <h3>Rotate & Flip</h3>
+            <div class="rotate-btns">
+                <div class="btn">
+                    <i class="fa-solid fa-rotate-right"></i>    
+                </div>
+                <div class="btn"> <i class="fa-solid fa-rotate-left"></i></div>
+                <div class="btn"> <img src="image.png" alt=""> </div>
+                <div class="btn"><img src="image.png" alt=""> </div>
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <img src="image.png" alt="">
+        </div>
+      </div>
+
+      <div class="downBtn">
+        <button class="reset" >Reset Filter</button>
+        <div class="down-btns">
+            <input  type="file" id="file">
+           <label for="file">Choose
+           </label>
+            <button class="" >Save Changes</button>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

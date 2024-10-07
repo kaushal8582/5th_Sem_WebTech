@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    width: 70%;
+    height: 90%;
+    background: #ffa500;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+main>h1{
+    text-align: center;
+}
+
+#mainDiv{
+    margin-top: 30px;
+    width: 100%;
+    height: 80%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left{
+    height: 100%;
+    width: 37%;
+    border: 2px solid white;
+    padding: 30px;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+
+.buttons button{
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* for javaScript */
+
+.active{
+    background: #1c1c5a;
+    color: white;
+}
+
+
+.progress{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.progre-report{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress input{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.rotate-flip{
+    margin-top: 20px;
+}
+
+.rotate-flip h3{
+    font-size: 17px;
+}
+
+.rotate-flip .rotate-btns{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rotate-flip .rotate-btns .btn{
+    width: 60px;
+    height: 45px;
+    background: white;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+}
+
+
+.btn img{
+    height: 20px;
+}
+
+
+#right{
+    
+    height: 100%;
+    width:60%;
+    border: 2px solid white;
+}
+
+#right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.downBtn{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.downBtn button{
+    padding: 10px 40px;
+    border-radius: 15px;
+    /* border: none; */
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.downBtn input{
+    display: none;
+}
+
+.reset{
+    padding: 10px 40px;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.downBtn label{
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
+    background: whitesmoke;
+    cursor: pointer;
+}
