@@ -46,15 +46,79 @@
 // });
 
 
-let promise = new Promise(function(resolve,reject){
-    let success = false;    
-    if(success){
-        resolve("Promise fullfilled!")
+// let promise = new Promise(function(resolve,reject){
+//     let success = false;    
+//     if(success){
+//         resolve("Promise fullfilled!")
+//     }else{
+//         reject("Promise rejected!")
+//     }
+// })
+
+
+// Then and Catch ✅
+
+// promise.then((data)=>{
+//     console.log("some data for ls college ",data);
+// }).catch((error)=>{
+//     console.log("data is not found",error);  
+// }).finally(()=>{
+//     console.log("present");
+    
+// })
+
+// promises chaining ✅
+
+const promisess = new Promise(function(resolve,reject){
+    let find =true;
+
+    if(find){
+         resolve("mil gayi ls college");
     }else{
-        reject("Promise rejected!")
+        reject("nahi mili")
     }
+
 })
 
+// promisess.then((data)=>{
+//     console.log(data);
+//     return "BCA department"
+// }).then((data)=>{
+//     console.log(data);
+//     return "Lab"
+// }).then((data)=>{
+//     console.log(data);
+// })
 
-promise.then((msg)=>console.log(msg)
-).catch((err)=>console.log(err))
+
+// Attaching multiple handlers ✅
+
+// promisess.then((data)=>{
+//     console.log("first ", data);
+// })
+
+// promisess.then((data)=>{
+//     console.log("second ",data);
+// })
+
+// promisess.then((data)=>{
+//     console.log("third ",data);
+// })
+
+
+// Async & await
+
+// async function getAllDataOfLscollege(){
+//     await console.log("PRint all ls college Data");
+//     console.log("promise");
+// }
+
+
+// Try & Catch ✅
+
+try {
+    console.log("prince is good but not in study");
+    throw new Error("prince error ")
+} catch (error) {
+    console.log(error);
+}
